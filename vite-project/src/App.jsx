@@ -1,11 +1,18 @@
 
+import {  Routes ,Route } from 'react-router-dom'
 import './App.css'
-import Login from './components/Login'
+
+import User from './components/UserAdmin'
+import LayoutAdmin from './components/layouts/layoutadmin'
 
 function App() {
   return <div>
-    <Login/>
-  </div>
+      <Routes>
+    <Route path='/' element={<LayoutAdmin/>} />
+    <Route path='/username' element={<User/>} />
+      </Routes>
+      </div>
+  
 }
 
-export default App
+export default App;

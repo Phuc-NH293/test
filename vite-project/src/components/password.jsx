@@ -35,7 +35,7 @@ function Password() {
             {({ field, form }) => (
               <FormControl isInvalid={form.errors.name && form.touched.name}>
                 <FormLabel>Mật khẩu</FormLabel>
-                <Input w="250px" {...field} placeholder='password' type={show ? 'text' : 'password'} />
+                <Input w="250px" height='30px' {...field} placeholder='password' type={show ? 'text' : 'password'} />
                 <FormErrorMessage color='red'>{form.errors.name}</FormErrorMessage>
               </FormControl>
             )}

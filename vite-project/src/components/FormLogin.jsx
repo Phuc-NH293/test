@@ -27,18 +27,18 @@ function FormikExample() {
       }}
     >
       {(props) => (
-        <Form w="120px" >
+        <Form w="120px"  >
           <Field name='name' validate={validateName} >
             {({ field, form }) => (
               <FormControl isInvalid={form.errors.name && form.touched.name}>
                 <FormLabel>Tài Khoản</FormLabel>
-                <Input w="250px" {...field} placeholder='name'  />
+                <Input w="250px" height='30px' {...field} placeholder='name'  />
                 <FormErrorMessage color='red'>{form.errors.name}</FormErrorMessage>
               </FormControl>
             )}
           </Field> 
           <Password/>       
-          <Button
+          <Button w="258px" height='30px' bg='#63B3ED' color="#fff"
             mt={4}
             colorScheme='teal'
             // eslint-disable-next-line react/prop-types
